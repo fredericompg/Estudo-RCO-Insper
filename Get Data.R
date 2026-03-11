@@ -169,7 +169,7 @@ write.csv(
 )
 
 
-# MICRODADOS NUBANK ------------------------------------------------------------
+# MICRODADOS ------------------------------------------------------------
 
 url <- "https://www.dropbox.com/scl/fi/hbl3p9jmg1kbdu893b9rb/Emprestimos_Portados.csv?rlkey=3lill2uq20tpg0j949t8b3sti&e=2&st=j4bc1o5s&dl=1"
 # Note o final da url como ?dl=1 ao invés do default ?dl=0 que vem no link
@@ -190,3 +190,4 @@ resp <- req_perform(req, path = "Emprestimos_Portados.csv")
 
 # Se quiser ler o .csv diretamente sem baixa-lo numa pasta
 df <- read.csv(url)
+
